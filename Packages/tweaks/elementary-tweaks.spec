@@ -13,6 +13,7 @@ BuildRequires:  gettext
 BuildRequires:  libappstream-glib
 BuildRequires:  meson
 BuildRequires:  vala
+BuildRequires:  switchboard-devel
 
 Requires:       hicolor-icon-theme
 
@@ -45,4 +46,4 @@ rm -rf %{buildroot}
 /usr/src/debug/*
 /usr/lib64/*
 /usr/share/locale/*
-/usr/share/icons/hicolors
+/usr/share/icons/hicolor/*
