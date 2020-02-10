@@ -15,6 +15,15 @@ BuildRequires:  meson
 BuildRequires:  vala
 BuildRequires:  switchboard-devel
 
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gobject-2.0)
+BuildRequires:  pkgconfig(granite) >= 0.5
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(polkit-gobject-1)
+BuildRequires:  pkgconfig(switchboard-2.0)
+BuildRequires:  GConf2-devel
+
+
 Requires:       hicolor-icon-theme
 
 
