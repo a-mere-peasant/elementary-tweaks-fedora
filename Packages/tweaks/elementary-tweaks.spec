@@ -21,7 +21,8 @@ Provides:       elementary-tweaks = %{version}-%{release}
 
 
 %description
-The elementary tweak tool helps to cusomize the pantheon desktop enviornment's appearance easily and safely
+The elementary tweak tool helps to cusomize the pantheon desktop
+ enviornment's appearance easily and safely
 
 %prep
 %autosetup -n %{srcname} -p1
@@ -41,8 +42,7 @@ rm -rf %{buildroot}
 %files
 %doc README.md
 %license COPYING
-/usr/share/*
 /usr/src/debug/*
-/usr/lib/*
 /usr/lib64/*
-
+/usr/share/locale/*
+/usr/share/icons/hicolors
