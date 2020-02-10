@@ -52,7 +52,6 @@ rm -rf %{buildroot}
 %files
 %doc README.md
 %license COPYING
-/usr/src/debug/*
-/usr/lib64/*
-/usr/share/locale/*
-/usr/share/icons/hicolor/*
+
+%{_libdir}
+%{_datadir}
