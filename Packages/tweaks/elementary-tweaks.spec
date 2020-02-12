@@ -7,7 +7,8 @@ Version:        5.0.3
 Release:        1%{?dist}
 License:        GPLv3+
 
-Source0:        https://github.com/a-mere-peasant/elementary-tweaks/archive/elementary-tweaks.tar.gz
+Source0:        https://sourceforge.net/projects/elementary-tweaks/files/elementary-tweaks.tar.gz
+
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
