@@ -1,12 +1,15 @@
+%global commit 5e2e0e1d4ac8da72e616d126a85284902c324224
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+%global commitdate 20200120
 
 Name:           elementary-tweaks
 Summary:        Tweak settings for the Pantheon DE
-Version:        1.0.1
-Release:        1%{?dist}
+Version:        0.0.1
+Release:        1.%{commitdate}.git%{shortcommit}%{?dist}
 License:        GPLv3+
 
-URL:            https://github.com/a-mere-peasant/%{name}
-Source0:        %{url}/archive/%{name}-%{version}.tar.gz
+URL:            https://github.com/%{name}/%{name}
+Source0:        %{url}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
@@ -28,7 +31,7 @@ Requires:       hicolor-icon-theme
 elementary tweaks is a system panel settings you lets that easily and safely customize your desktop's appearance
 
 %prep
-%autosetup -n %{name}-%{version} -p1
+%autosetup -n %{name}-%{commit} -p1
 
 %build
 %meson
